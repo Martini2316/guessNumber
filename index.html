@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zgadnij liczbe</title>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="title">
+            <p class="diff">Wybierz Poziom trudności</p>
+        </div>      
+        <div class="buttons-diff">
+            <input onclick="uncheckHard()" type="radio" id="easy" value="Latwy">Latwy
+            <input onclick="uncheckEasy()" type="radio" id="hard" value="Trudny">Trudny
+        </div>  
+        <div class="start">
+            <button onclick="generator();">ZACZYNAMY!</button>
+        </div>
+
+        <div id="INPUTS" style="display:none;">
+            <input id="input-num" class="numberInput" type="number" placeholder="Wprowadz liczbe"><br><br><br>
+            <button onclick="checkNumber();">SPRAWDZ</button>
+            <p id="field" style="color: black;"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
